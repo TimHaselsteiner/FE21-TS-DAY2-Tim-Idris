@@ -21,7 +21,7 @@ class vehicles{
     }
 
     printCard(){
-        return `<div class="row">
+        return `
         <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${this.Picture}" alt="Card image cap">
@@ -33,7 +33,7 @@ class vehicles{
         
         </div>
         </div>
-      </div>`
+      `
 
 }
 
@@ -50,7 +50,7 @@ class Cars extends vehicles {
 
      
      printCard(){
-        return `<div class="row">
+        return `
         <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${this.Picture}" alt="Card image cap">
@@ -60,8 +60,7 @@ class Cars extends vehicles {
           <a href="#" class="btn btn-primary showMore">Inspect</a>
         </div>
         </div>
-        </div>
-      </div>`
+        </div>`
 
 }
 }
@@ -77,13 +76,15 @@ class Motorbikes extends vehicles {
 
      
      printCard(){
-        return `<div class="card" style="width: 18rem;">
+        return `<div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${this.Picture}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">${this.Name}</h5>
           <p class="card-text">${this.Year}</p>
           <a href="#" class="btn btn-primary showMore">Inspect</a>
         </div>
+      </div>
       </div>`
 
 }

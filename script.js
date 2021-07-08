@@ -25,7 +25,7 @@ var vehicles = /** @class */ (function () {
         transport.push(this);
     }
     vehicles.prototype.printCard = function () {
-        return "<div class=\"row\">\n        <div class=\"col-lg-3 col-md-6 col-sm-12\">\n        <div class=\"card\" style=\"width: 18rem;\">\n        <img class=\"card-img-top\" src=\"" + this.Picture + "\" alt=\"Card image cap\">\n        <div class=\"card-body\">\n          <h5 class=\"card-title\">" + this.Name + "</h5>\n          <p class=\"card-text\">" + this.Year + "</p>\n          <a href=\"#\" class=\"btn btn-primary showMore\">Inspect</a>\n        </div>\n        \n        </div>\n        </div>\n      </div>";
+        return "\n        <div class=\"col-lg-3 col-md-6 col-sm-12\">\n        <div class=\"card\" style=\"width: 18rem;\">\n        <img class=\"card-img-top\" src=\"" + this.Picture + "\" alt=\"Card image cap\">\n        <div class=\"card-body\">\n          <h5 class=\"card-title\">" + this.Name + "</h5>\n          <p class=\"card-text\">" + this.Year + "</p>\n          <a href=\"#\" class=\"btn btn-primary showMore\">Inspect</a>\n        </div>\n        \n        </div>\n        </div>\n      ";
     };
     return vehicles;
 }());
@@ -35,7 +35,7 @@ var Cars = /** @class */ (function (_super) {
         return _super.call(this, Name, Year, Seats, Price, Fuel, Picture) || this;
     }
     Cars.prototype.printCard = function () {
-        return "<div class=\"row\">\n        <div class=\"col-lg-3 col-md-6 col-sm-12\">\n        <div class=\"card\" style=\"width: 18rem;\">\n        <img class=\"card-img-top\" src=\"" + this.Picture + "\" alt=\"Card image cap\">\n        <div class=\"card-body\">\n          <h5 class=\"card-title\">" + this.Name + "</h5>\n          <p class=\"card-text\">" + this.Year + "</p>\n          <a href=\"#\" class=\"btn btn-primary showMore\">Inspect</a>\n        </div>\n        </div>\n        </div>\n      </div>";
+        return "\n        <div class=\"col-lg-3 col-md-6 col-sm-12\">\n        <div class=\"card\" style=\"width: 18rem;\">\n        <img class=\"card-img-top\" src=\"" + this.Picture + "\" alt=\"Card image cap\">\n        <div class=\"card-body\">\n          <h5 class=\"card-title\">" + this.Name + "</h5>\n          <p class=\"card-text\">" + this.Year + "</p>\n          <a href=\"#\" class=\"btn btn-primary showMore\">Inspect</a>\n        </div>\n        </div>\n        </div>";
     };
     return Cars;
 }(vehicles));
@@ -45,7 +45,7 @@ var Motorbikes = /** @class */ (function (_super) {
         return _super.call(this, Name, Year, Seats, Price, Fuel, Picture) || this;
     }
     Motorbikes.prototype.printCard = function () {
-        return "<div class=\"card\" style=\"width: 18rem;\">\n        <img class=\"card-img-top\" src=\"" + this.Picture + "\" alt=\"Card image cap\">\n        <div class=\"card-body\">\n          <h5 class=\"card-title\">" + this.Name + "</h5>\n          <p class=\"card-text\">" + this.Year + "</p>\n          <a href=\"#\" class=\"btn btn-primary showMore\">Inspect</a>\n        </div>\n      </div>";
+        return "<div class=\"col-lg-3 col-md-6 col-sm-12\">\n        <div class=\"card\" style=\"width: 18rem;\">\n        <img class=\"card-img-top\" src=\"" + this.Picture + "\" alt=\"Card image cap\">\n        <div class=\"card-body\">\n          <h5 class=\"card-title\">" + this.Name + "</h5>\n          <p class=\"card-text\">" + this.Year + "</p>\n          <a href=\"#\" class=\"btn btn-primary showMore\">Inspect</a>\n        </div>\n      </div>\n      </div>";
     };
     return Motorbikes;
 }(vehicles));
